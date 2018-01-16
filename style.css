@@ -1,0 +1,147 @@
+    body {
+        margin: 0;
+    }
+
+    #poster {
+        display: inline-block;
+        width: calc(30vh * 2.12);
+        height: calc(30vh * 3.04);
+        overflow: hidden;
+        position: relative;
+        background-color: #1E1A19;
+    }
+
+    #rotate {
+        transform: translate(calc(-0.04 * 30vh), calc(-0.44 * 30vh)) rotate(-8.3deg);
+    }
+
+    #center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    #layer-1 {
+        position: absolute;
+        transform: translateY(calc(30vh / 1.75));
+    }
+
+    .container {
+        color: #000;
+        margin: auto;
+        display: flex;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        border-width: calc(30vh / 1.75) 0;
+        float: left;
+    }
+
+    .triangle-left  {
+      border-right-width: 30vh;
+      transition: opacity 1s ease .5s;
+  }
+
+    .triangle-right {
+      border-left-width: 30vh;
+      transition: opacity 1s ease .5s;
+    }
+
+    #layer-1 .container:nth-child(1) .triangle:nth-child(1) { border-color: transparent #D6202C; }
+    #layer-1 .container:nth-child(1) .triangle:nth-child(2) { border-color: transparent #6EB557; }
+    #layer-1 .container:nth-child(1) .triangle:nth-child(3) { border-color: transparent #EFC20D; }
+
+    #layer-1 .container:nth-child(2) .triangle:nth-child(1) { border-color: transparent #EFC20D; }
+    #layer-1 .container:nth-child(2) .triangle:nth-child(2) { border-color: transparent #B090A7; }
+    #layer-1 .container:nth-child(2) .triangle:nth-child(3) { border-color: transparent #D6202C; }
+
+    #layer-1 .container:nth-child(3) .triangle:nth-child(2) { border-color: transparent #354A7F; }
+
+    #layer-2 .container:nth-child(1) .triangle:nth-child(1) { border-color: transparent #1E1A19; }
+    #layer-2 .container:nth-child(1) .triangle:nth-child(2) { border-color: transparent #354A7F; }
+    #layer-2 .container:nth-child(1) .triangle:nth-child(3) { border-color: transparent #EFC20D; }
+
+    #layer-2 .container:nth-child(2) .triangle:nth-child(1) { border-color: transparent #EE7228; }
+    #layer-2 .container:nth-child(2) .triangle:nth-child(2) { border-color: transparent #E4E8DA; }
+    #layer-2 .container:nth-child(2) .triangle:nth-child(3) { border-color: transparent #1E1A19; }
+
+    #layer-2 .container:nth-child(3) .triangle:nth-child(1) { border-color: transparent #1E1A19; }
+    #layer-2 .container:nth-child(3) .triangle:nth-child(2) { border-color: transparent #354A7F; }
+
+    #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 200px solid blue;
+        border-right: 200px solid transparent;
+    }
+
+.title {
+  position: absolute;
+  top: 125px;
+  font-size: 1.8em;
+  font-family: "Arial";
+  color: black;
+  transform: rotate(8.3deg);
+  transition: background-color 5s ease-in 2s;
+ }
+
+
+.mit {
+  position: absolute;
+  top: 91px;
+  left: 30px;
+  font-size: 1em;
+  font-family: "Arial";
+  color: black;
+  transform: rotate(8.3deg);
+}
+
+.bush {
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+  font-size: .8em;
+  font-family: "Arial";
+  color: white;
+  transform: rotate(8.3deg);
+}
+
+.doc {
+  position: absolute;
+  bottom: 95px;
+  left: 200px;
+  font-size: .75em;
+  font-family: "Arial";
+  color: white;
+  transform: rotate(8.3deg);
+}
+
+.num {
+position: absolute;
+left: 400px;
+  font-size: .75em;
+  font-family: "Arial";
+  color: black;
+  transform: rotate(8.3deg);
+}
+
+.vision {
+  position: absolute;
+  left: 210px;
+  top: 223px;
+  font-size: .85em;
+  font-family: "Arial";
+  color: black;
+  transform: rotate(8.3deg);
+}
+
+.triangle:hover {
+  opacity: 0.25;
+
+}
